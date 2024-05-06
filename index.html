@@ -1,19 +1,40 @@
-<!--index.html-->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <header>
+    <h1>Electron App</h1>
+    <div class="wrapper">
+      <input type="checkbox" id="hide-checkbox">
+      <label for="hide-checkbox" class="toggle">
+        <span class="toggle-button">
+          <span class="crater crater-1"></span>
+          <span class="crater crater-2"></span>
+          <span class="crater crater-3"></span>   
+          <span class="crater crater-4"></span>
+          <span class="crater crater-5"></span>
+          <span class="crater crater-6"></span>
+          <span class="crater crater-7"></span>
+        </span>
+        <span class="star star-1"></span>
+        <span class="star star-2"></span>
+        <span class="star star-3"></span>
+        <span class="star star-4"></span>
+        <span class="star star-5"></span>
+        <span class="star star-6"></span>
+        <span class="star star-7"></span>
+        <span class="star star-8"></span>
+      </label>
+    </div>
+  </header>
+    <h2>Hello World!</h2>
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
+    <script src="renderer.js"></script>
   </body>
+</body>
 </html>
